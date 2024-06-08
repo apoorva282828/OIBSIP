@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(223, 222, 197);
+}
+
+/* Designing the body of calculator */
+.container {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  height: 70vh;
+  border-radius: 5px;
+  padding: 10px 20px 20px;
+  background: #5e5c5c;
+}
+
+/* Designing display box where result of input will be shown */
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #4a4747;
+  pointer-events: none;
+}
+
+/* To set the proper size of buttons */
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Designing the buttons */
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  color: #4a4747;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.buttons button:hover {
+  background-color: rgb(249, 247, 220)
+}
+
+.buttons button:active {
+  transform: scale(0.99);
+}
+
+/* To change the color of equal button */
+#equal {
+    color: rgb(220, 20, 140);
+    background-color: #fff;
+}
+
+#equal:hover {
+  color: #fff;
+  background-color: rgb(220, 20, 140);
+}
